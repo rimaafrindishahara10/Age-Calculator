@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container" >
+        <div class="row" >
+            <div class="col-md-6 offset-md-3">
+                <div class="card my-4">
+
+                    <div class="card-body bg-light">
+                        <h2 class="card-title text-center">
+                            Age Calculator
+                        </h2>
+                        <p class="text-secondary"><small>Provide your date of birth**</small></p>
+
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <!-- For Date -->
+                                <div class="form-group">
+                                    
+                                    <input 
+                                    placeholder="Date" id="date-feild"
+                                    type="text" class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <!-- For Month -->
+                                
+                                <select class="form-control" name="" id="month-feild">
+
+                                    <option value="" selected disabled>Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="Jun">Jun</option>
+                                    <option value="July">July</option>
+                                    <option value="Augest">Augest</option>
+                                    <option value="September">September</option>
+                                    <option value="Octobar">Octobar</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+
+                                </select>
+
+                            </div>
+                            <div class="col-md-4">
+                                <!-- For Year -->
+                                
+                                <input placeholder="Year" type="text" id="year-feild" class="form-control">
+
+
+                            </div>
+                        </div>
+                        <div class="form-group text-center mt-3">
+                            <button onclick="calculate()" class="btn btn-warning btn-sm">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- show the age -->
+    <div class="container">
+        <div class="row"  >
+            <div class="col-md-6 offset-md-3">
+                <div class="card bg-success text-white">
+                    <div class="card-body ">
+                        <h2 class="card-title">Your Age Is:</h2>
+
+                        <div class="col-md-6 mt-2">
+                            <!-- for days -->
+                            <label for="">Days:</label>
+                            <h4 id="days"> </h4>
+                             
+                        </div>
+                        <div class="col-md-6 mt-2">
+                            <!-- for years -->
+                            <label for="">Years:</label>
+                            <h4 id="years"> </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+
+
+
+
+    <script src="/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
